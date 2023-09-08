@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+
+  <link rel="icon" href="https://img.edvido.com/optimize/40/d6d21d2a-a224-4604-a5a5-8829fb9c7816.png" type="image/png">
+
+  <style>
+    .logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 120px;
+      right: 10px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+
+    }
+
+    .open-button {
+      margin-top: 20px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .close-button:hover {
+      background-color: #0056b3;
+    }
+
+    .open-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>İzin Ver</h2>
+      <p>Site çerezleri kullanıyor. İzin vermek istiyor musunuz?.</p>
+      <button class="open-button" onclick="openPopup()">İzin Ver</button>
+      <button class="close-button" onclick="closePopup()">Kapat</button>
+    </div>
+  </div>
+
+
+  <script>
+
+    window.onload = function () {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'block';
+    };
+
+    function closePopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+    function openPopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknoloji Takibi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+
+    }
+
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    footer {
+      background-color: #bb2e2e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .invisible-text {
+      color: transparent;
+    }
+
+
+  </style>
+  </head>
+
+  <body>
+    <header class="header-1">
+      <h1>
+        <p class="invisible-text">Anasayfa</p>
+      </h1>
+    </header>
+
+    <body>
+      <style>
+          body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+      
+  }
+  
+  .nav-item {
+      text-decoration: none;
+      color: white;
+      margin-right: 20px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+  }
+  
+  .nav-item:hover {
+      background-color: #0db6c2;
+  }
+  
+  .navbar-left {
+      display: flex;
+      align-items: center;
+      background-color: #0db6c2;
+  }
+  
+  .navbar-right {
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar-right .nav-item {
+      background-color: #f39c12;
+  }
+  
+      </style>
+      <nav class="navbar">
+          <div class="navbar-right">
+            <div class="group">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+              <input placeholder="Search" type="search" class="input">
+            </div>
+          
+            <style>
+              .group {
+           display: flex;
+           line-height: 28px;
+           align-items:center;
+           position: relative;
+           max-width: 190px;
+          }
+          
+          .input {
+           width: 100%;
+           height: 40px;
+           line-height: 28px;
+           padding: 0 1rem;
+           padding-left: 2.5rem;
+           border: 2px solid transparent;
+           border-radius: 8px;
+           outline: none;
+           background-color: #f3f3f4;
+           color: #0d0c22;
+           transition: .3s ease;
+          }
+          
+          .input::placeholder {
+           color: #9e9ea7;
+          }
+          
+          .input:focus, input:hover {
+           outline: none;
+           border-color: rgba(234,76,137,0.4);
+           background-color: #fff;
+           box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+          }
+          
+          .icon {
+           position: absolute;
+           left: 1rem;
+           fill: #9e9ea7;
+           width: 1rem;
+           height: 1rem;
+          }
+          
+          
+          
+          
+          
+          
+            </style>
+              <a href="anasayfa.html" class="nav-item">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Anasayfa</a>
+              <a href="haberler.html" class="nav-item">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Haberler</a>
+              <a href="makale.html" class="nav-item">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Makaleler</a>
+              <a href="iletisim.html" class="nav-item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                İletişim</a>
+          </div>
+          
+          <div class="navbar-right">
+            <a href="giris.html" class="nav-item">
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+              Giriş Yap</a>
+              <a href="kayitol.html" class="nav-item">
+                <i class="fa fa-registered" aria-hidden="true"></i>
+                Kayıt Ol</a>
+              
+          </div>
+      </nav>
+      
+
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Geçiş Animasyonu</title>
+
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+        }
+
+
+        a {
+          display: inline-block;
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 20px;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        a:hover {
+          background-color: #555;
+        }
+      </style>
+      </head>
+
+      <body>
+      </body>
+
+</html>
+
+</nav>
+<section>
+
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .header-1 {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        background-image: url('https://media.licdn.com/dms/image/C4D12AQE3T0VsskpLqg/article-cover_image-shrink_600_2000/0/1614445864760?e=2147483647&v=beta&t=GJLYrablj4xwkPQB0pNwCIsbbVjVOpBvSFi-FJu3urQ');
+      }
+      br
+
+        .header-2 {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1rem;
+        }
+
+      .news-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+
+      .news-item {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(228, 6, 6, 0.1);
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      .news-item img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      .news-item h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .news-item p {
+        color: #131212;
+      }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknoloji Haberleri</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <header class="header-2">
+      <h1>Anasayfa</h1>
+    </header>
+    <section class="news-container">
+      <div class="news-item">
+        <a href="https://shiftdelete.net/tesla-cybertruck-tasarim-calismalari" target="_blank"><img
+            src="https://ares.shiftdelete.net/2023/06/cybertruck-neden-satisa-sunulmuyor-2.jpg" alt="Haberler"></a>
+        <h2>Tesla Cybertruck çok daha farklı olabilirdi! İşte önceki tasarım çalışmaları</h2>
+        <p>
+          İlk Tesla Cybertruck’ın üretim bandından indiği bugünlerde, elektrikli aracın daha önceki tasarım çalışmaları
+          da ortaya çıktı.
+        </p>
+
+      </div>
+      <div class="news-item">
+        <a href="https://shiftdelete.net/netflix-uygun-fiyatli-paket-kaldirdi#:~:text=%C5%9Eu%20anda%20T%C3%BCrkiye'deki%20en,kullan%C4%B1mda%20olmad%C4%B1%C4%9F%C4%B1n%C4%B1%20da%20belirtmek%20gerekiyor."
+          target="_blank"> <img src="https://ares.shiftdelete.net/2023/07/Geliyor-gelmekte-olan-Netflix-uygun-fiyatli-paketini-kaldirdi-2.jpg" alt="Haberler"></a>
+        <h2>Geliyor gelmekte olan: Netflix uygun fiyatlı paketini kaldırdı!</h2>
+        <p>
+          Popüler çevrim içi dizi ve film izleme platformu Netflix, uygun fiyatlı paketini iki ülkeden daha kaldırdı.
+          Türkiye’de de kalkacak mı?
+        </p>
+      </div>
+      <div class="news-item">
+        <a href="https://shiftdelete.net/iphone-16-periskop-kamera-ile-gelecek#:~:text=Ortaya%20%C3%A7%C4%B1kan%20yeni%20bir%20rapor,olan%20ilk%20iPhone%20modeli%20olacak."
+          target="_blank"> <img src="https://ares.shiftdelete.net/2023/07/iPhone-15-icin-degil-Merakla-beklenen-kamera-iPhone-16-ile-gelecek-2.jpg" alt="Haberler"></a>
+        <h2>iPhone 15 için değil: Merakla beklenen kamera iPhone 16 ile gelecek!</h2>
+        <p>
+          iPhone 15’in tanıtılmasına az bir zaman kala iPhone 16 Pro Max kamera özelliğiyle ilgili iddialar gelmeye
+          başladı.
+        </p>
+      </div>
+      <div class="news-item">
+        <a href="https://shiftdelete.net/whatsapp-numara-kaydetme-donemi-bitiyor" target="_blank"> <img
+            src="https://ares.shiftdelete.net/2023/07/WhatsAppta-numara-kaydetme-donemi-bitiyor-2.webp" alt="Haber 1"></a>
+        <h2>WhatsApp’ta numara kaydetme dönemi bitiyor!</h2>
+        <p>
+          Popüler mesajlaşma platformu WhatsApp bilinmeyen numaralara mesaj göndermeyi kolaylaştırıyor. İşte detaylar!
+        </p>
+      </div>
+      <div class="news-item">
+        <a href="https://shiftdelete.net/asus-mini-bilgisayar#:~:text=Bilgisayar%20pazar%C4%B1n%C4%B1n%20en%20g%C3%BC%C3%A7l%C3%BC%20markalardan,bir%20model%20de%20tan%C4%B1tmas%C4%B1%20bekleniyor."
+          target="_blank"> <img src="https://ares.shiftdelete.net/2023/07/asus-nuc.jpg" alt="Haber 2"></a>
+        <h2>ASUS’tan Mac Mini rakibi bilgisayar geliyor!</h2>
+        <p>
+          Intel, ASUS ile Next Unit of Compute (NUC) mini bilgisayar modelleri için ortaklık anlaşmasına vardığını
+          açıkladı.
+        </p>
+      </div>
+      <div class="news-item">
+        <a href="https://shiftdelete.net/vivo-v29-lite-ozellikleri" target="_blank"> <img src="https://ares.shiftdelete.net/2023/07/vivo-v29-lite-ozellikleri-3.jpg"
+            alt="Haber 1"></a>
+        <h2>Orta segmente kavisli AMOLED: Vivo V29 Lite geliyor!</h2>
+        <p>
+          Vivo, V29 Lite 5G modelini Türkiye’ye getireceğini açıkladı. Cihazın tasarımınından teknik özelliklerine kadar
+          tüm detayları paylaşıyoruz.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <body>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        .ad-container {
+          display: flex;
+          justify-content: center;
+        }
+
+        .ad {
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          width: 300px;
+          text-align: center;
+        }
+
+        .ad img {
+          width: 150px;
+          height: 150px;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+
+        .ad h2 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .ad p {
+          margin-bottom: 10px;
+        }
+
+        .ad a {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 4px;
+        }
+
+        .ad a:hover {
+          background-color: #0056b3;
+        }
+      </style>
+
+
+      <div class="ad-container">
+        <div class="ad">
+          <img src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/casper/thumb/138684-2_large.jpg" alt="Teknoloji Reklamı">
+          <h2>Oyunda Güç Budur!</h2>
+          <p>Konfigüre edilebilir Excalibur laptop oyun bilgisayarı sayfasında oyun tutkunları için hazırlanmış en
+            kaliteli gaming laptop modellerini inceleyebilirsiniz.</p>
+          <a href="https://www.casper.com.tr/oyun-bilgisayari?gclid=Cj0KCQjwwvilBhCFARIsADvYi7IjyVjcqY7-Ca7SXdvgN8_6SA184zdVSFYvaWAJnYXcAQymYhjOzoIaAmAgEALw_wcB"
+            target="_blank">Detayları Gör</a>
+        </div>
+
+        <div class="ad">
+          <img src="https://www.technopat.net/wp-content/uploads/2022/02/akilli-telefon-tavsiyeleri-scaled.jpg" alt="Teknoloji Reklamı">
+          <h2>En Son Akıllı Telefonlar</h2>
+          <p>Yeni Nesil Teknolojilerle Donatılmış Yüksek Performanslı Cep Telefon Modelleri.</p> <br><br>
+          <a href="https://www.hepsiburada.com/cep-telefonlari-c-371965?siralama=coksatan" target="_blank">Detayları
+            Gör</a>
+        </div>
+        <div class="ad">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Teknosa_logo.svg/2560px-Teknosa_logo.svg.png" alt="Teknoloji Reklamı">
+          <h2>Teknoloji Varsa Teknosa</h2>
+          <p>Türkiye'nin teknoloji lideri Teknosa! Güncel kampanyalar ve ürünler hakkında detaylı bilgi edinebilir,
+            aradığınız ürünü uygun fiyata satın alabilirsiniz!</p>
+          <a href="https://www.teknosa.com/?gclsrc=aw.ds&gclid=Cj0KCQjwwvilBhCFARIsADvYi7L8oMFDzxzZF-C9zpQJgVT4PAlvrYDrp7pEbfJvJlwdeuonCUEOlmYaAl0pEALw_wcB"
+            target="_blank">Detayları Gör</a>
+        </div>
+
+        <div class="ad">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/71xUTDBYx6L._AC_UL600_SR600,600_.jpg" alt="Teknoloji Reklamı">
+          <h2>Dilediğin Kitaplar Burada</h2>
+          <p>Detaylar için lütfen sitemizi ziyaret edin</p> <br><br><br><br>
+          <a href="https://www.kitapsec.com/" target="_blank">Detayları Gör</a>
+        </div>
+      </div>
+
+
+
+
+      <section>
+
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+            a {
+              text-decoration: none;
+              display: inline-block;
+              padding: 8px 16px;
+
+            }
+
+            .center {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+
+            }
+
+            a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .previous {
+              background-color: #f1f1f1;
+              color: black;
+            }
+
+            .next {
+              background-color: #04AA6D;
+              color: white;
+            }
+
+            .round {
+              border-radius: 50%;
+            }
+          </style>
+        </head>
+
+        <body>
+
+
+
+          <a href="anasayfa.html" class="previous">&laquo; Geri</a>
+          <a href="ileri.html" class="next">İleri &raquo;</a>
+
+
+
+
+      </section>
+
+
+      <footer>
+        <p>&copy; 2023 Teknoloji Haberleri. Tüm hakları saklıdır.</p>
+      </footer>
+
+    </body>
+
+
+
+
+</section>
+
+
+
+
+
+</body>
+
+</html>
